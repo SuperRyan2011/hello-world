@@ -4,5 +4,5 @@
   gather_facts: no
 
   tasks:
-   - name: Echo whatever in the survey
-     debug: msg="V1 {{ strEcho }}"
+   - name: Check hostname
+     command: hostname
