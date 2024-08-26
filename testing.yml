@@ -5,7 +5,7 @@
 
   tasks:
    - name: Check hostname
-     ansible.builtin.command: df -h
+     ansible.builtin.command: ansible-navigator images
      register: result
 
    - name: Print result
