@@ -5,4 +5,9 @@
 
   tasks:
    - name: Check hostname
-     command: df -h
+     ansible.builtin.command: df -h
+     register: result
+
+   - name: Print result
+     ansible.builtin.debug:
+       var: result
